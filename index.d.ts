@@ -5,6 +5,7 @@ declare module 'react-native-default-preference' {
 
     export default class RNDefaultPreference {
         static get(key: string): Promise<string>;
+        static getObject(key: string): Promise<any>;
         static set(key: string, value: string): Promise<void>;
         static clear(key: string): Promise<void>;
         static getMultiple(keys: string[]): Promise<RNDefaultPreferenceKeys>;
